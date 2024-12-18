@@ -54,7 +54,6 @@ colorama
 colorcet
 comm
 conda-build
-conda-content-trust
 conda-libmamba-solver
 conda-pack
 conda-package-handling
