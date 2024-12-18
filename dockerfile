@@ -1,7 +1,18 @@
+# Use a stable Node.js version
+FROM node:16
+
 # Use an official Python runtime as a parent image
 FROM python:3.9-slim
 
-# Set the working directory inside the container
+# Install build dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    python3 \
+    python3-dev \
+    python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
@@ -10,26 +21,10 @@ COPY . /app
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose port 8000 (default for FastAPI)
-EXPOSE 8000
+# Expose port (if needed)
+EXPOSE 3000
 
-# Run the FastAPI app using Uvicorn
-CMD ["gunicorn", "-w", "4", "-k", "uvicorn.workers.UvicornWorker", "app:app"]
-
-RUN apt-get update && apt-get install -y nodejs npm
-
-RUN chmod -R 755 /app
-
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    python3 \
-    python3-dev \
-    python3-pip \
-    && rm -rf /var/lib/apt/lists/*
-npm uninstall node-sass
-npm install sass
-RUN npm install
+# Command to run the application
 CMD ["npm", "start"]
-FROM node:16
 
 
