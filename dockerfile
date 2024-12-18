@@ -19,3 +19,17 @@ CMD ["gunicorn", "-w", "4", "-k", "uvicorn.workers.UvicornWorker", "app:app"]
 RUN apt-get update && apt-get install -y nodejs npm
 
 RUN chmod -R 755 /app
+
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    python3 \
+    python3-dev \
+    python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+npm uninstall node-sass
+npm install sass
+RUN npm install
+CMD ["npm", "start"]
+FROM node:16
+
+
