@@ -54,13 +54,6 @@ colorama
 colorcet
 comm
 conda-build
-conda-libmamba-solver
-conda-pack
-conda-package-handling
-conda-repo-cli
-conda-token
-conda_index
-conda_package_streaming
 constantly
 contourpy
 cookiecutter
