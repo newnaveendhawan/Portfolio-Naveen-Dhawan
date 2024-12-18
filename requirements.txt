@@ -254,7 +254,6 @@ pytoolconfig
 pytz
 pyviz_comms
 pywavelets
-pywin32==305.1
 pywin32-ctypes
 pywinpty
 PyYAML
