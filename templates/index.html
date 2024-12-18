@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portfolio - Naveen Dhawan</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/devicons/css/devicons.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/simple-line-icons/css/simple-line-icons.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/resume.min.css') }}" rel="stylesheet">
+
+    <style>
+        .container { display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+        .category { display: flex; align-items: center; margin: 0 20px; }
+        .icon { font-size: 24px; margin-right: 10px; border-radius: 50%; padding: 4px; }
+        .text { font-weight: bold; }
+    </style>
+    <style>
+        .fa-stack {
+          display: inline-block;
+          width: 3em;
+          height: 3em;
+        }
+        .list-inline {
+          padding-left: 0;
+          list-style-type: none;
+          margin: 0;
+        }
+
+        .fa-circle {
+          color: #ff5733; /* Orange */
+        }
+        .list-inline-item {
+          margin: 0;
+          padding: 0;
+        }
+
+
+        .fa-envelope {
+          color: #FFFFFF; /* White for the envelope */
+        }
+
+        .fa-github {
+          color: #211F1F; /* GitHub dark color */
+        }
+        .fa-github {
+          color: #211F1F; /* GitHub dark color */
+        }
+        .fa-linkedin {
+          color: #0077B5; /* GitHub dark color */
+        }
+    </style>
+    <link rel="icon" href="{{ url_for('static', filename='img/fevicon.png') }}" type="image/png">
+
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ url_for('static', filename='img/profile.jpeg') }}" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#home">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">about me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Responsibility">RESPONSIBILITY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Contacts">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-row justify-content-between" id="home" style="background-color: #ffffff;">
+        <!-- left content (text and button) -->
+        <div class="my-auto" style="text-align: left;">
+          <h1 class="mb-0" style="font-size: 32px;">I am
+            <span class="text-primary">Naveen Dhawan</span>
+          </h1>
+        <!-- Left side image -->
+        <div style="flex-shrink: 0; margin-right: 20px;">
+          <img src="{{ url_for('static', filename='img/Data_analyst.png') }}" alt="Left Image" style="width: 350px; height: auto;">
+        </div>
+
+
+          <!-- Button below the text, linking to google.com -->
+          <div style="text-align: left; margin-top: 20px;">
+            <a href="https://www.linkedin.com/in/newnaveendhawan" target="_blank" style="text-decoration: none;">
+              <button style="
+                padding: 10px 20px;
+                font-size: 16px;
+                background: linear-gradient(to right, #FF8C00, #DC143C);
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 1px;
+                display: block;
+                margin-top: 50px;
+                margin-bottom: 30px;">
+                Contact Me
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right side image -->
+        <div style="flex-shrink: 0; margin-left: 20px;">
+<!--          <img src="{{ url_for('static', filename='img/bb.png') }}" alt="Right Image" style="width: 350px; height: auto;">-->
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="about" style="font-family: Arial, sans-serif; padding: 20px; background-color: white;">
+          <!-- Heading and Description -->
+          <div style="text-align: left; margin-bottom: 10px;">
+              <h2 style="font-size: 32px; font-weight: bold; color: #333;">About Me</h2>
+              <p style="font-size: 18px; color: #555;">
+                  I am skilled in using data analysis techniques to improve decision-making and efficiency. With experience in data analytics, machine learning, and data visualization, I use modern tools to provide useful insights. My teamwork and problem-solving approach helps improve collaboration and adds value in different areas.
+              </p>
+          </div>
+
+          <!-- Flexbox Layout for Image and Data -->
+          <div style="display: flex; align-items: center; max-width: 900px; margin: 0 auto;">
+              <!-- Image on the left side -->
+              <div style="flex: 1; max-width: 30%; padding-right: 20px;">
+                  <img src="{{ url_for('static', filename='img/me.png') }}" alt="About Me Image" style="width: 100%; height: auto; border-radius: 8px;">
+              </div>
+
+              <!-- Right side with data -->
+              <div style="flex: 2; display: flex; flex-direction: column;">
+                  <!-- Top Information Split into Two Columns -->
+                  <div style="display: flex; justify-content: space-between;">
+                      <!-- Left Column -->
+                      <div style="flex: 1; padding-right: 20px;">
+                          <p><strong>Github:</strong> <a href="https://github.com/newnaveendhawan" target="_blank" style="color: #FF6347;">newnaveendhawan</a></p>
+                          <p><strong>LinkedIn: </strong> <a href="https://linkedin.com/in/newnaveendhawan" target="_blank" style="color: #FF6347;">newnaveendhawan</a></p>
+                          <p><strong>City:</strong> Bengaluru, Karnataka</p>
+                      </div>
+                      <!-- Right Column -->
+                      <div style="flex: 1; padding-left: 20px;">
+                          <p><strong>| Degree:</strong> BTech</p>
+                          <p><strong>| Mail:</strong> <a href="mailto:newnaveendhawan@gmail.com" style="color: #FF6347;">newnaveendhawan</a></p>
+                      </div>
+
+                  </div>
+
+                  <!-- Hobbies Section BELOW the Freelance text -->
+                  <div style="margin-top: 10px;">
+
+                    <p><strong>Interests & Hobbies:</strong></p>
+
+                      <!-- Symbols and Text -->
+                      <div style="display: flex; justify-content: center; text-align: center;">
+
+
+                          <div style="display: flex; align-items: center; margin-right: 20px;">
+                              <i style="font-size: 24px; margin-right: 8px; color: #333;">&#119072;</i>
+                              <span style="font-size: 18px; color: #555;">Music</span>
+                          </div>
+                          <div style="display: flex; align-items: center; margin-right: 20px;">
+                              <i style="font-size: 24px; margin-right: 8px; color: #333;">&#9822;</i>
+                              <span style="font-size: 18px; color: #555;">Chess</span>
+                          </div>
+                          <div style="display: flex; align-items: center; margin-right: 20px;">
+                              <img src="{{ url_for('static', filename='img/gym.png') }}" alt="About Me Image" style="width: 24px; height: 24px; margin-right: 8px;">
+                              <span style="font-size: 18px; color: #555;">Workout</span>
+                          </div>
+                          <div style="display: flex; align-items: center;">
+                              <i style="font-size: 24px; margin-right: 8px; color: #333;">&#x2708;</i>
+                              <span style="font-size: 18px; color: #555;">Travel</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">NATIONAL INSTITUTE OF TECHNOLOGY, WARANGAL</h3>
+              <div class="subheading mb-3">Bachelor of Technology</div>
+              <div>Material and Metallurgical Engineering, Btech</div>
+              <p><strong>Relevent Courses:</strong> Neural Networks, Probability and Statistics, Data Science and Machine Learning from Intrutiv.ai, SQL, Data Visualization with PowerBI, and Machine Learning</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Dec 2020 - Jun 2024</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Krishna Vidhya Mandir, Sikar</h3>
+              <div class="subheading mb-3">senior secondary school</div>
+              <p></p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Aug 2018 - May 2020</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">CUSTOMER RETENTION AND ACQUISITION ANALYSIS OF A LOGISTIC COMPANY</h3>
+              <div class="subheading mb-3">Data-Driven Insights and Performance Optimization</div>
+              <p>Created Power BI dashboards to track orders, registrations, and customer behaviors, enabling real-time insights for performance monitoring</p>
+              <p>Analyzed data for targeted cities to enhance customer segmentation, leading to improved marketing strategies.</p>
+              <p>Optimized inventory, campaign effectiveness, and predictive analytics, supporting better promotional ROI, stock management, and customer retention strategies.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Nov 2024</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">AUTOMATED STOCK TREND ANALYSIS USING FYERS API</h3>
+              <div class="subheading mb-3">Build confidence in making long-term stock buying and selling decisions.</div>
+              <p>Integrated Fyers API to retrieve stock data for any listed stock, enabling customized analyses.</p>
+              <p>Developed code to identify stock uptrends by percentage after accumulation over various timeframes, supporting swing trading strategies.</p>
+              <p>70% of the time, accumulation on daily time frame leads to advancing (38 out of 54 times)</p>
+              <p><strong>Complete document with all findings is <b><a href="https://imaginary-oxygen-293.notion.site/Stock-Accumulation-to-Advancing-1382ddb1031280aa9c9af0a4ab7747d6">here</a></b></strong></p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Oct 2024</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">HOUSE PRICE PREDICTION MODEL</h3>
+              <div class="subheading mb-3">The model predicts flat prices in Bangalore to simplify decision-making for different BHK sizes and locations</div>
+              <p>Analyzed 13,320 property records to develop a predictive model for house prices.</p>
+              <p>Train and evaluate regression models (Linear, Lasso, Ridge) for house price prediction.</p>
+              <p>The deployed model provides estimates property price, aiding investment planning and real estate decisions.</p>
+              <p><strong>Complete document with all findings is <b><a href="https://imaginary-oxygen-293.notion.site/House-Price-Prediction-Model-1542ddb103128032b4c0d0e6a0b31526">here</a></b></strong></p>
+              <p>Use House Pricing Model from <b><a href="https://house-price-prediction-model-kfoz.onrender.com">here</a></b>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Jun 2023</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+                <h3 class="mb-0">Other Useful Projects</h3>
+
+                <!-- First Project -->
+
+                <div class="d-flex mt-4">
+                    <div class="subheading mb-3" style="margin-right: 10px;">Power BI dashboard for Sales Analysis</div>
+                    <div style="margin-right: 10px; font-family: 'Alice', serif;"><a href="https://drive.google.com/drive/folders/1vxDMW5U9nx72pK3szhFgsIB0mf8gJBQW"><sub>All Documents here</sub></a></div>
+                    <div class="resume-date text-md-right ml-auto">
+                        <span class="text-primary">Aug 2024</span>
+                    </div>
+                </div>
+
+                <div class="text-left">
+                    <p>Developed a dashboard to analyze sales performance, uncover trends, and provide insights for data-driven decision-making. It tracks key metrics such as total sales and performance, enabling better strategic planning.</p>
+
+                </div>
+
+                <!-- Second Project -->
+                <div class="d-flex mt-4">
+                    <div class="subheading mb-3" style="margin-right: 10px;">Power BI dashboard for HR Analytics</div>
+                    <div style="margin-right: 10px; font-family: 'Alice', serif;"><a href="https://drive.google.com/drive/folders/1vxDMW5U9nx72pK3szhFgsIB0mf8gJBQW"><sub>All Documents here</sub></a></div>
+                    <div class="resume-date text-md-right ml-auto">
+                        <span class="text-primary">Aug 2024</span>
+                    </div>
+                </div>
+                <div class="text-left">
+                    <p>Developed a Power BI dashboard for HR analytics to track employee performance, attrition, and recruitment trends, automating data analysis, enabling strategic workforce planning.</p>
+                </div>
+                <!-- Second Project -->
+                <div class="d-flex mt-4">
+                    <div class="subheading mb-3" style="margin-right: 10px;">Customer Segmentation using K-Means Clustering</div>
+                    <div style="margin-right: 10px; font-family: 'Alice', serif;"><a href="https://imaginary-oxygen-293.notion.site/Customer-Segmentation-using-K-Means-Clustering-13c2ddb1031280859004e2edf47a7f66"><sub>Project file here</sub></a></div>
+                    <div class="resume-date text-md-right ml-auto">
+                        <span class="text-primary">Jan 2023</span>
+                    </div>
+                </div>
+
+                <div class="text-left">
+                    <p>Segmented customers using KMeans clustering to group customers based on their annual income and spending scores, enabling targeted marketing strategies and personalized customer engagement.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Skills-->
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <div class="subheading mb-3">Technical Skills</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicons devicons-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-blogger"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-python"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fas fa-database"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fas fa-chart-bar"></i>
+            </li>
+          </ul>
+          <div class="subheading mb-3">Tools</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <img src="{{ url_for('static', filename='img/Logo-google-cloud.png') }}" alt="Google Cloud" style="width: 50px; height: 50px; margin-right: 10px;">
+            </li>
+            <li class="list-inline-item">
+              <img src="{{ url_for('static', filename='img/snowflake.png') }}" alt="Snowflake" style="width: 50px; height: 50px; margin-right: 10px;">
+            </li>
+            <li class="list-inline-item">
+              <img src="{{ url_for('static', filename='img/google analytics.png') }}" alt="Google Analytics" style="width: 50px; height: 50px; margin-right: 10px;">
+            </li>
+            <li class="list-inline-item">
+              <img src="{{ url_for('static', filename='img/numpy.png') }}" alt="Numpy" style="width: 50px; height: 50px; margin-right: 10px;">
+            </li>
+            <li class="list-inline-item">
+              <img src="{{ url_for('static', filename='img/pandas.png') }}" alt="Pandas" style="width: 50px; height: 50px; margin-right: 10px;">
+            </li>
+            <li class="list-inline-item">
+              <img src="{{ url_for('static', filename='img/matplotlib.png') }}" alt="Matplotlib" style="width: 50px; height: 50px; margin-right: 10px;">
+            </li>
+            <li class="list-inline-item">
+              <img src="{{ url_for('static', filename='img/scikit-learn.png') }}" alt="scikit-learn" style="width: 50px; height: 50px; margin-right: 10px;">
+            </li>
+          </ul>
+          <p></p>
+
+          <div class="subheading mb-3">Soft Skills</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+               Attention to Detail</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Problem-Solving</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Responsibility">
+        <div class="my-auto">
+          <h2 class="mb-5">RESPONSIBILITY &amp; Certifications</h2>
+          <h4 class="mb-2">RESPONSIBILITY</h4>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-greater-than text-warning"></i>
+              Volunteer and Management in SpringSpree in 2022</li>
+            <li>
+              <i class="fa-li fa fa-greater-than text-warning"></i>
+              Sub core: SpringSpree’23 in Design Team in 2023</li>
+            <li>
+              <i class="fa-li fa fa-greater-than text-warning"></i>
+              Member of Material and Metallurgical Engineering Association in Design Team (2022)</li>
+            <li>
+              <i class="fa-li fa fa-greater-than text-warning"></i>
+              Member of the student council from 2022 to 2024 (team leader)</li>
+          </ul>
+          <p> </p>
+          <p> </p>
+          <h4 class="mb-2">Certifications</h4>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              Completed a free online course in <strong><a href="https://drive.google.com/file/d/1bNjSSHRIFM0onhVftYM43lWryP7Igwi2/view?usp=drive_link">Data Science Foundations </a></strong> provided by Great Learning Academy (July 2022).
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              Completed the course <strong><a href="https://drive.google.com/file/d/1jPyAio2GCSErdKKswqKodWwF2FL2srsH/view?usp=drive_link">'Supervised Machine Learning: Regression and Classification'</a></strong> offered by DeepLearning.AI and Stanford Online through Coursera (Nov 2023).
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+              Completed <strong><a href="https://drive.google.com/file/d/1iZuKwEtd_nHBm8lE3I8H1VQYPVDY3m59/view?usp=drive_link">'Learning Python' course </a></strong> on LinkedIn Learning, acquiring foundational skills in Python programming and core concepts (July 2022).
+            <li>
+          </ul>
+        </div>
+      </section>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Contacts">
+        <div class="my-auto">
+          <h2 class="mb-5">Contact ME</h2>
+          <p>I am always open to connecting with professionals and organizations for potential career opportunities. You can reach out to me through the platforms listed below for inquiries, collaborations, or any questions you may have.</p>
+          <div>
+            <ul class="list-inline list-social-icons mb-0">
+              <li class="list-inline-item">
+                <a href="mailto:newnaveendhawan@gmail.com.com">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i> <!-- Circle with Gmail color -->
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i> <!-- Gmail logo -->
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/newnaveendhawan">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/newnaveendhawan">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ url_for('static', filename='js/resume.min.js') }}"></script>
+    <footer>
+      <p style="font-family: 'Arial', sans-serif; font-size: 14px;">Template credit:
+        <a href="https://startbootstrap.com" target="_blank" rel="noopener noreferrer"
+           style="font-family: 'Verdana', sans-serif; color: #007bff; text-decoration: none;">
+           Resume</a> by David Miller.
+      </p>
+    </footer>
+
+  </body>
+
+</html>
